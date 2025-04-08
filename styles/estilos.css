@@ -1,0 +1,49 @@
+/*Aqui va a ir los estilos css para el index.html*/
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Voy a darle estilos al body*/
+body 
+{
+    background-color: azure;
+    font-family: 'Open Sans', Courier, monospace;
+    font-size: 30px;
+}
+
+.contenedor{
+    width:100%;
+    background-color: aqua;
+    max-width: 1000px;
+    margin:auto; /*Margen automatico para centrar el contenedor*/
+    overflow:hidden /*Ocultamos desbordamiento contenedor*/
+}
+
+/*Voy a darle estilos al header*/
+header 
+{
+    width: 100%; /*Usa todo el ancho de la pagina*/
+    text-align: right; /*Alinea todo el header a la derecha*/
+    background: url('../img/10.jpeg') #281a0c; /*Coloca imagen de fondo para el header*/
+    background-size:cover;
+    background-attachment: fixed; /*Atributo para que la imagen de fondo en header no se mueva*/
+    background-position: center 0;
+
+}
+
+/* Solo damos formato al contenedor de header*/
+header .contenedor{
+    position:relative;
+    height: 700px;
+}
+
+/*estilos al menu dentro del header*/
+
+header .menu{
+    /*Anchura*/
+    width: 100%;
+    text-align: right;
+}
