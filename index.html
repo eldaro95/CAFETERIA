@@ -5,30 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafetería Daro</title>
     <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Underdog&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--Inicio del header-->
     <header>
         <!--Menu de navegacion-->
-        <div>
-            <nav>
+        <div class="contenedor">
+            <nav class="menu">
                 <a href="#" id="acerca_de">Acerca de</a>
                 <a href="#" id="menu">Menú</a>
                 <a href="#" id="galeria">Galería</a>
                 <a href="#" class="menu" id="ubicacion">Ubicación</a>
             </nav>
-        </div>
-        <div>
-            <h1>Cafetería Daro</h1>
+            <div class="texto">
+                <h1 class="nombrecaf">Cafetería <span>Daro</span></h1>
+                <h3>La mejor sensación del café en tu paladar</h3>
+            </div>
         </div>
     </header>
-
-    <section>   
+    <!--Inicio seccion main-->
+    <section class="main">   
         <!--Inicio Acerca de-->
-        <section class="acerca-de">
-            <div>
-                <div>
-                    <img src="img/1.jpeg" alt="Fachada">
+        <section class="acerca-de" id="acerca-de">
+            <div class="contenedor">
+                <div class="foto">
+                    <img src="img/9.jpeg" alt="Fachada">
                 </div>
             </div>
             <article>
@@ -44,7 +48,7 @@
         </section> <!--Fin Acerca de-->
 
         
-        <section class="menu"> <!--Inicio Menú-->
+        <section> <!--Inicio Menú-->
             <div class="contenedor">
                 <h3 class="titulo" id="platos">Menú</h3>
                 <div class="contenedor-menu2">
@@ -94,7 +98,7 @@
                 </div>
             </div>
         </section>  <!--Fin sección menú-->
-
+    </section>  <!--Fin sección main-->
         <section>
             <section> <!--Inicio sección galerías-->
                 <div class="foto">
