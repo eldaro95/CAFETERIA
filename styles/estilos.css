@@ -12,7 +12,7 @@
 /*Voy a darle estilos al body*/
 body 
 {
-    background-color: azure; /*Color de fondo para el cuerpo de la página*/
+    /*background-color: azure; /*Color de fondo para el cuerpo de la página*/
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Fuente usada en el sitio*/
     font-size: 30px; /*Tamaño base de fuente*/
 }
@@ -22,14 +22,14 @@ body
     /*background-color: aqua;*/ /*Color de fondo (comentado)*/
     max-width: 1000px; /*Ancho máximo del contenedor*/
     margin:auto; /*Margen automático para centrar horizontalmente*/
-    overflow:hidden /*Oculta contenido que se desborde*/
+    /*overflow:hidden /*Oculta contenido que se desborde*/
 }
 
 /*Voy a darle estilos al header*/
 header 
 {
     width: 100%; /*Usa todo el ancho de la pagina*/
-    text-align: right; /*Alinea todo el contenido del header a la derecha*/
+    
     background: url('../img/10.jpeg') #281a0c; /*Imagen de fondo y color de respaldo*/
     background-size:cover; /*Ajusta la imagen para cubrir todo el fondo*/
     background-attachment: fixed; /*Fija la imagen al fondo al hacer scroll*/
@@ -39,7 +39,7 @@ header
 /* Solo damos formato al contenedor de header*/
 header .contenedor{
     position:relative; /*Posición relativa para ubicar elementos hijos absolutamente*/
-    text-align: center; /*Texto centrado horizontalmente*/
+    /*text-align: center; /*Texto centrado horizontalmente*/
     height: 500px; /*Altura del contenedor del header*/
 }
 
@@ -104,9 +104,25 @@ header .texto h3{
 
 .main .acerca-de .foto{
     width:80%; /*Ancho de la imagen al 80% del contenedor*/
-    position:relative; /*Posicionamiento relativo para ubicarla*/
+    position:absolute; /*Posicionamiento relativo para ubicarla*/
     left:0; /*Sin desplazamiento horizontal*/
     top:-50px; /*Desplazamiento hacia arriba*/
     z-index: 0; /*Capa detrás de otros elementos si los hubiera*/
-    box-shadow: 0px 0px 50px rgba(0,0,0,0.55); /*Sombra difusa alrededor de la imagen*/
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.85); /*Sombra difusa alrededor de la imagen*/
+}
+
+.main .acerca-de .foto img{
+    vertical-align: top;
+    width:100%;
+}
+
+.main .acerca-de article{
+    background-color: white;
+    padding:30px;
+    width:65%;
+    position:relative;
+    top:100px;
+    z-index: 1;
+    float: right;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.85);
 }
